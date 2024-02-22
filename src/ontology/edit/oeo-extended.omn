@@ -28,6 +28,58 @@ AnnotationProperty: <http://purl.org/dc/terms/title>
 AnnotationProperty: dc:description
 
     
+AnnotationProperty: rdfs:label
+
+    
+Datatype: rdf:PlainLiteral
+
+    
 Datatype: xsd:string
+
+    
+ObjectProperty: <http://openenergy-platform.org/ontology/oeo/OEO_00020056>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/IAO_0000136>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000057>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEOX_00010000>
+
+    Annotations: 
+        rdfs:label "final energy consumption of gasoline for transport"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00050016>
+         and (<http://openenergy-platform.org/ontology/oeo/OEO_00020056> some 
+            (<http://openenergy-platform.org/ontology/oeo/OEO_00140003>
+             and (<http://purl.obolibrary.org/obo/RO_0000057> some <http://openenergy-platform.org/ontology/oeo/OEO_00000183>)))
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEOX_00010001>
+
+    Annotations: 
+        rdfs:label "CO2 emission scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020321>)
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000183>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020321>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00050016>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00140003>
 
     
