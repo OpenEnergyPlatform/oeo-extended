@@ -45,7 +45,7 @@ endef
 
 .PHONY: all clean base directories
 
-all: base
+all: base closure
 
 base: | $(VERSIONDIR)/catalog-v001.xml build/robot.jar $(OMN_COPY)
 
@@ -54,7 +54,7 @@ closure: | $(VERSIONDIR)/oeo-extended-closure.owl
 clean:
 	- $(RM) -r $(VERSIONDIR) $(ROBOT_PATH)
 
-$(VERSIONDIR)/catalog-v001.xml: src/ontology/catalog-v001.xml
+$(VERSIONDIR)/catalog-v001.xml: src/ontology/edit/catalog-v001.xml
 	cp $< $@
 	$(call replace_devs,$@)
 	sed -i -E "s/edits\//modules\//m" $@
