@@ -14,15 +14,15 @@ jobs:
           make
       - name: validate-profile
         run: |
-          echo "java -jar build/robot.jar validate-profile --input build/oeo/$(cat VERSION)/oeo-extended.owl --profile Full -vvv --output merged-validation.txt"
-          java -jar build/robot.jar validate-profile --input build/oeo/$(cat VERSION)/oeo-extended.owl --profile Full -vvv --output merged-validation.txt
+          echo "java -jar build/robot.jar validate-profile --input build/oeo-extended/$(cat VERSION)/oeo-extended.owl --profile Full -vvv --output merged-validation.txt"
+          java -jar build/robot.jar validate-profile --input build/oeo-extended/$(cat VERSION)/oeo-extended.owl --profile Full -vvv --output merged-validation.txt
       - name: verify
         run: |
-          java -jar build/robot.jar verify --input build/oeo/$(cat VERSION)/oeo-extended.owl --queries tests/verify/*
+          java -jar build/robot.jar verify --input build/oeo-extended/$(cat VERSION)/oeo-extended.owl --queries tests/verify/*
       - uses: actions/upload-artifact@master
         with:
           name: build-artifacts
-          path: build/oeo
+          path: build/oeo-extended
   test:
     runs-on: ubuntu-latest
     needs: build
@@ -39,14 +39,14 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: build-artifacts
-          path: build/oeo
+          path: build/oeo-extended
       - name: setup robot 1.9.0
         run: |
           wget https://github.com/ontodev/robot/releases/download/v1.9.0/robot.jar -O build/robot19.jar
       - name: consistency
         run: |
           wget https://github.com/owlcs/releases/raw/master/HermiT/org.semanticweb.hermit-packaged-1.4.6.519-SNAPSHOT.jar -O build/hermit.jar
-          OUT=$(java -jar build/hermit.jar file://`pwd`/build/oeo/$(cat VERSION)/oeo-extended.owl -U)
+          OUT=$(java -jar build/hermit.jar file://`pwd`/build/oeo-extended/$(cat VERSION)/oeo-extended.owl -U)
           if [ "$(echo "$OUT" | tr -d '[:space:]')" = "Classesequivalentto'owl:Nothing':owl:Nothing" ];
           then
             exit 0
