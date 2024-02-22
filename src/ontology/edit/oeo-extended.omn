@@ -1,0 +1,33 @@
+Prefix: : <http://www.semanticweb.org/l.emele/ontologies/2024/1/untitled-ontology-1022/>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <https://openenergy-platform.org/ontology/oeo-extended/>
+
+Import: <http://openenergy-platform.org/ontology/oeo/releases/2.1.0/oeo.omn>
+
+Annotations: 
+    dc:description "The Open Energy Ontology Extended (OEOX) extends this Open Energy Ontology.
+
+It is contains compositions of terms that are too specific for the OEO.",
+    <http://purl.org/dc/terms/license> "http://creativecommons.org/publicdomain/zero/1.0/",
+    <http://purl.org/dc/terms/title> "Open Energy Ontology Extended (OEOX)"
+
+AnnotationProperty: <http://purl.org/dc/terms/license>
+
+    
+AnnotationProperty: <http://purl.org/dc/terms/title>
+
+    
+AnnotationProperty: dc:description
+
+    
+Datatype: xsd:string
+
+    
