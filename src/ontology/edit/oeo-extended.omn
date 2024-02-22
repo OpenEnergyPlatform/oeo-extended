@@ -1,4 +1,4 @@
-Prefix: : <https://openenergy-platform.org/ontology/oeo-extended/>
+Prefix: : <http://openenergy-platform.org/ontology/oeo-extended/>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: dct: <http://purl.org/dc/terms/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
@@ -9,14 +9,12 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-Ontology: <https://openenergy-platform.org/ontology/oeo-extended/>
+Ontology: <http://openenergy-platform.org/ontology/oeo-extended/>
 
 Import: <http://openenergy-platform.org/ontology/oeo/releases/2.1.0/oeo.omn>
 
 Annotations: 
-    dc:description "The Open Energy Ontology Extended (OEOX) extends this Open Energy Ontology.
-
-It is contains compositions of terms that are too specific for the OEO.",
+    dc:description "The Open Energy Ontology Extended (OEOX) extends the Open Energy Ontology. It contains compositions of terms that are too specific for the OEO.",
     dct:license "http://creativecommons.org/publicdomain/zero/1.0/",
     dct:title "Open Energy Ontology Extended (OEOX)"
 
