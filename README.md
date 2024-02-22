@@ -6,6 +6,9 @@
 
 The Open Energy Ontology Extended (OEOX) extends the Open Energy Ontology. It contains compositions of terms that are too specific for the OEO.
 
+![grafik](https://github.com/OpenEnergyPlatform/oeo-extended/assets/38690039/7fddb3d5-ae7f-400d-bae6-da8d8bfb04b6)
+
+
 ## License / Copyright / Citation
 
 This repository is licensed under `CC0 1.0 Universal (CC0 1.0) Public Domain Dedication`.
