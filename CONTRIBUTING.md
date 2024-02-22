@@ -1,6 +1,6 @@
 # Development
 
-## How to contribute a concept by composition from existing concepts (oeox-concept) ?
+## How to contribute a concept by composition from existing concepts (OEOX-concept) ?
 
 **The following guidelines are in place until a GUI on the OEP is launched.**
 
