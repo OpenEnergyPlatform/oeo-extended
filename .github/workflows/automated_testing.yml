@@ -1,0 +1,25 @@
+name: OEO CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: "adopt"
+          java-version: "11"
+      - name: make
+        run: |
+          make
+      - name: validate-profile
+        run: |
+          echo "java -jar build/robot.jar validate-profile --input build/oeo-extended/$(cat VERSION)/oeo-extended.owl --profile Full -vvv --output merged-validation.txt"
+          java -jar build/robot.jar validate-profile --input build/oeo-extended/$(cat VERSION)/oeo-extended.owl --profile Full -vvv --output merged-validation.txt
+      - name: verify
+        run: |
+          java -jar build/robot.jar verify --input build/oeo-extended/$(cat VERSION)/oeo-extended.owl --queries tests/verify/*
+      - uses: actions/upload-artifact@master
+        with:
+          name: build-artifacts
+          path: build/oeo-extended
