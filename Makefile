@@ -45,7 +45,7 @@ endef
 
 .PHONY: all clean base directories
 
-all: base closure
+all: base closure ${VERSIONDIR}
 
 base: | $(VERSIONDIR)/catalog-v001.xml build/robot.jar $(OMN_COPY)
 
@@ -62,6 +62,8 @@ $(VERSIONDIR)/catalog-v001.xml: src/ontology/edit/catalog-v001.xml
 build/robot.jar: | build
 	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.9.2/robot.jar
 
+${VERSIONDIR}:
+	${MKDIR_P} ${VERSIONDIR}
 
 $(VERSIONDIR)/%.owl: $(VERSIONDIR)/%.omn
 	$(call translate_to_owl,$@,$<)
