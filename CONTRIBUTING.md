@@ -12,3 +12,9 @@
 |  definitions   |    The definition should be a more readable version of the axiomatization.   |
 |     |           |
 
+## Workflow of adding a concept
+
+1. Read the concept composition guideline above
+1. Commeit your concept with IRI, label, axioms, definition to the dev branch
+1. When the `dev` branch is merged into `main`automatic checks are in place
+   1. Check for dublicates in IRIs
