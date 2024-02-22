@@ -21,7 +21,7 @@ jobs:
           java -jar build/robot.jar verify --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --queries tests/verify/*
       - name: check inferred equivalence
         run: |
-          java -jar build/robot.jar reason --reasoner hermit --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --axiom-generators "EquivalentClass" --equivalent-classes-allowed asserted-only
+          java -jar build/robot.jar reason --reasoner ELK --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --axiom-generators "EquivalentClass" --equivalent-classes-allowed asserted-only
       - uses: actions/upload-artifact@master
         with:
           name: build-artifacts
