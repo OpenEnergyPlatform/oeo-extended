@@ -73,6 +73,6 @@ $(VERSIONDIR)/oeo-extended.omn : src/ontology/edit/oeo-extended.omn
 # 	$(call translate_to_omn,$@,$<)
 # 	$(call replace_owls,$@)
 
-$(VERSIONDIR)/oeo-extended-closure.owl : $(VERSIONDIR)/oeo-extended.owl
+$(VERSIONDIR)/oeo-extended-closure.owl : $(VERSIONDIR)/oeo-extended.omn
 	$(ROBOT) reason --input $< --reasoner hermit --catalog $(VERSIONDIR)/catalog-v001.xml --axiom-generators "SubClass EquivalentClass DataPropertyCharacteristic EquivalentDataProperties SubDataProperty ClassAssertion EquivalentObjectProperty InverseObjectProperties ObjectPropertyCharacteristic SubObjectProperty ObjectPropertyRange ObjectPropertyDomain" --include-indirect true annotate --ontology-iri $(OEP_BASE) --output $@
 	$(ROBOT) merge --catalog $(VERSIONDIR)/catalog-v001.xml --input $< --input $@ annotate --ontology-iri $(OEP_BASE) --output $@
