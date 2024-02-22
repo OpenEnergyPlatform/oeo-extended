@@ -11,7 +11,7 @@ jobs:
           java-version: "11"
       - name: make
         run: |
-          make
+          make base
       - name: validate-profile
         run: |
           echo "java -jar build/robot.jar validate-profile --input build/oeo-extended/$(cat VERSION)/oeo-extended.owl --profile Full -vvv --output merged-validation.txt"
