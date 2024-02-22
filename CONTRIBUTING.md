@@ -15,6 +15,7 @@
 ## Workflow of adding a concept
 
 1. Read the concept composition guideline above
-1. Commeit your concept with IRI, label, axioms, definition to the dev branch
+1. In Protégé change your "Specified IRI:" to "`http://openenergy-platform.org/ontology/oeo-extended/`"
+1. Commit your concept with IRI, label, axioms, definition to the dev branch
 1. When the `dev` branch is merged into `main`automatic checks are in place
    1. Check for dublicates in IRIs
