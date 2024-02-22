@@ -65,31 +65,9 @@ build/robot.jar: | build
 ${VERSIONDIR}:
 	${MKDIR_P} ${VERSIONDIR}
 
-$(VERSIONDIR)/%.owl: $(VERSIONDIR)/%.omn
-	$(call translate_to_owl,$@,$<)
-
-$(VERSIONDIR)/modules/%.owl: $(VERSIONDIR)/edits/%.omn
-	$(call translate_to_owl,$@,$<)
-
-$(VERSIONDIR)/%.owl: $(ONTOLOGY_SOURCE)/%.owl
-	cp -a $< $@
+$(VERSIONDIR)/oeo-extended.omn : src/ontology/edit/oeo-extended.omn
+	cp $< $@
 	$(call replace_devs,$@)
-
-$(VERSIONDIR)/modules/%.owl: $(ONTOLOGY_SOURCE)/edits/%.owl
-	cp -a $< $@
-	$(call replace_devs,$@)
-
-$(VERSIONDIR)/modules/%.omn: $(ONTOLOGY_SOURCE)/edits/%.omn
-	cp -a $< $@
-	$(call replace_devs,$@)
-
-$(VERSIONDIR)/%.omn: $(ONTOLOGY_SOURCE)/%.omn
-	cp -a $< $@
-	$(call replace_devs,$@)
-
-$(VERSIONDIR)/oeo-extended.omn : | base
-	$(ROBOT) merge --catalog $(VERSIONDIR)/catalog-v001.xml $(foreach f, $(VERSIONDIR)/oeo-extended.omn $(OMN_COPY) $(OWL_COPY), --input $(f)) annotate --ontology-iri $(OEP_BASE) --output $@
-	# $(call replace_oms,$@)
 
 # $(VERSIONDIR)/oeo-extended.omn : $(VERSIONDIR)/oeo-extended.owl
 # 	$(call translate_to_omn,$@,$<)
