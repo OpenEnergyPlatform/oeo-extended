@@ -39,7 +39,7 @@ jobs:
       - name: consistency
         run: |
           wget https://github.com/owlcs/releases/raw/master/HermiT/org.semanticweb.hermit-packaged-1.4.6.519-SNAPSHOT.jar -O build/hermit.jar
-          OUT=$(java -jar build/hermit.jar file://`pwd`/build/oeo/$(cat VERSION)/oeo-extended.omn -U)
+          OUT=$(java -jar build/hermit.jar file://`pwd`/build/oeo-extended/$(cat VERSION)/oeo-extended.omn -U)
           if [ "$(echo "$OUT" | tr -d '[:space:]')" = "Classesequivalentto'owl:Nothing':owl:Nothing" ];
           then
             exit 0
