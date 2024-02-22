@@ -4,7 +4,7 @@
 
 # Open Energy Family – Open Energy Ontology Extended (OEOX)
 
-The Open Energy Ontology Extended (OEOX) extends this Open Energy Ontology. It is contains compositions of terms that are too specific for the OEO.
+The Open Energy Ontology Extended (OEOX) extends the Open Energy Ontology. It contains compositions of terms that are too specific for the OEO.
 
 ## License / Copyright / Citation
 
