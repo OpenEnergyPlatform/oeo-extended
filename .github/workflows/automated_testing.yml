@@ -16,6 +16,9 @@ jobs:
         run: |
           echo "java -jar build/robot.jar validate-profile --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --profile Full -vvv --output merged-validation.txt"
           java -jar build/robot.jar validate-profile --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --profile Full -vvv --output merged-validation.txt
+      - name: verify
+        run: |
+          java -jar build/robot.jar verify --input build/oeo-extended/$(cat VERSION)/oeo-extended.owl --queries tests/verify/*
       - uses: actions/upload-artifact@master
         with:
           name: build-artifacts
