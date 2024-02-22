@@ -45,7 +45,7 @@ endef
 
 .PHONY: all clean base directories
 
-all: base closure
+all: base
 
 base: | ${VERSIONDIR} $(VERSIONDIR)/catalog-v001.xml build/robot.jar $(OMN_COPY)
 
