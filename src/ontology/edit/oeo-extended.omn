@@ -23,13 +23,13 @@ It is contains compositions of terms that are too specific for the OEO.",
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
 
     
+AnnotationProperty: dc:description
+
+    
 AnnotationProperty: dct:license
 
     
 AnnotationProperty: dct:title
-
-    
-AnnotationProperty: dc:description
 
     
 AnnotationProperty: rdfs:label
@@ -50,7 +50,7 @@ ObjectProperty: <http://purl.obolibrary.org/obo/IAO_0000136>
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000057>
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEOX_00010000>
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010000>
 
     Annotations: 
         rdfs:label "final energy consumption of gasoline for transport"@en
@@ -62,7 +62,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEOX_00010000>
              and (<http://purl.obolibrary.org/obo/RO_0000057> some <http://openenergy-platform.org/ontology/oeo/OEO_00000183>)))
     
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEOX_00010001>
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010001>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A CO2 emisson scenario report is a study report that is about one or more CO2 emission scenarios.",
@@ -73,7 +73,7 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEOX_00010001>
          and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020321>)
     
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEOX_00010002>
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010002>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A wind turbine space requirement is a specific space requirement that is a quantity value of one or more wind energy converting units.",
@@ -87,6 +87,16 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEOX_00010002>
         <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010003>
+
+    Annotations: 
+        rdfs:label "GHG emission scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020317>)
+    
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
 
     
@@ -97,6 +107,9 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020317>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020321>
