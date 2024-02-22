@@ -87,9 +87,9 @@ $(VERSIONDIR)/%.omn: $(ONTOLOGY_SOURCE)/%.omn
 	cp -a $< $@
 	$(call replace_devs,$@)
 
-$(VERSIONDIR)/oeo-extended.owl : | base
-	$(ROBOT) merge --catalog $(VERSIONDIR)/catalog-v001.xml $(foreach f, $(VERSIONDIR)/oeo.owl $(OMN_COPY) $(OWL_COPY), --input $(f)) annotate --ontology-iri $(OEP_BASE) --output $@
-	$(call replace_oms,$@)
+$(VERSIONDIR)/oeo-extended.omn : | base
+	$(ROBOT) merge --catalog $(VERSIONDIR)/catalog-v001.xml $(foreach f, $(VERSIONDIR)/oeo-extended.omn $(OMN_COPY) $(OWL_COPY), --input $(f)) annotate --ontology-iri $(OEP_BASE) --output $@
+	# $(call replace_oms,$@)
 
 # $(VERSIONDIR)/oeo-extended.omn : $(VERSIONDIR)/oeo-extended.owl
 # 	$(call translate_to_omn,$@,$<)
