@@ -95,16 +95,6 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010003>
          and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020317>)
     
     
-Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010004>
-
-    Annotations: 
-        rdfs:label "greenhouse gas emission scenario report"@en
-    
-    EquivalentTo: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
-         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020317>)
-    
-    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
 
     
@@ -127,6 +117,3 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00050016>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00140003>
-
-Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010000>
-
