@@ -8,7 +8,6 @@ The Open Energy Ontology Extended (OEOX) extends the [Open Energy Ontology](http
 
 ![grafik](https://github.com/OpenEnergyPlatform/oeo-extended/assets/38690039/7fddb3d5-ae7f-400d-bae6-da8d8bfb04b6)
 
-
 ## License / Copyright
 
 This repository is licensed under `CC0 1.0 Universal (CC0 1.0) Public Domain Dedication`.
@@ -24,6 +23,5 @@ The development of the ontology happens mainly on [GitHub](https://github.com/Op
 The workflow is described in the [CONTRIBUTING.md](https://github.com/OpenEnergyPlatform/oeo-extended/blob/dev/CONTRIBUTING.md) file.
 Please check it out before you start working on this project.
 For topics that are not described in the CONTRIBUTING.md, the information from the OEO repository (especially from the [CONTRIBUTING.md](https://github.com/OpenEnergyPlatform/ontology/blob/dev/CONTRIBUTING.md) and the [wiki](https://github.com/OpenEnergyPlatform/ontology/wiki)) applies accordingly.
-Points that are not clear in the file can be discussed in a [GitHub Issue](https://github.com/OpenEnergyPlatform/ontology/issues/new/choose).
-Please read the [GitHub Wiki](https://github.com/OpenEnergyPlatform/ontology/wiki) for more information about the ontology, its standards, its best practice principles and the BFO classification.
+Points that are not clear in the file can be discussed in a [GitHub Issue](https://github.com/OpenEnergyPlatform/oeo-extended/issues/new/choose).
 
