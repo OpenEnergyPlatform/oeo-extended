@@ -19,13 +19,14 @@ jobs:
       - name: verify
         run: |
           java -jar build/robot.jar verify --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --queries tests/verify/*
-      # - name: find-duplicates
-      #   id: duplicates
-      #   run: |
-      #     linenum=$(sort build/oeo-extended/$(cat VERSION)/oeo-extended.omn | uniq -d | grep -Poc "Class: \K(.*)")
-      #     if [ "$linenum" != "0" ]; then
-      #         exit 1
-      #     fi
+      - name: find-duplicates
+        id: duplicates
+        run: |
+          linenum=$(sort build/oeo-extended/$(cat VERSION)/oeo-extended.omn | uniq -d | grep -Poc "Class: \K(.*)")
+          if [ "$linenum" != "0" ]; then
+                echo "$linenum"
+              exit 1
+          fi
       - name: check inferred equivalence
         run: |
           java -jar build/robot.jar reason --reasoner ELK --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --axiom-generators "EquivalentClass" --equivalent-classes-allowed asserted-only
