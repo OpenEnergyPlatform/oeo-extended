@@ -23,8 +23,8 @@ jobs:
         id: duplicates
         run: |
           linenum=$(sort build/oeo-extended/$(cat VERSION)/oeo-extended.omn | uniq -d | grep -Poc "Class: \K(.*)")
+          echo "$linenum"
           if [ "$linenum" != "0" ]; then
-                echo "$linenum"
               exit 1
           fi
       - name: check inferred equivalence
