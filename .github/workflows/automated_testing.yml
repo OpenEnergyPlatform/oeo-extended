@@ -21,7 +21,7 @@ jobs:
           java -jar build/robot.jar verify --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --queries tests/verify/*
       - name: find-duplicates
         run: |
-          sort build/oeo-extended/$(cat VERSION)/oeo-extended.omn | uniq -d | grep -Poc "Class: \K(.*)" || echo $
+          sort build/oeo-extended/$(cat VERSION)/oeo-extended.omn | uniq -d | grep -Poc "Class: \K(.*)" || echo $@>&2
       - name: check inferred equivalence
         run: |
           java -jar build/robot.jar reason --reasoner ELK --input build/oeo-extended/$(cat VERSION)/oeo-extended.omn --axiom-generators "EquivalentClass" --equivalent-classes-allowed asserted-only
