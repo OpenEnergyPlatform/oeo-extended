@@ -24,7 +24,7 @@ jobs:
         run: |
           sort build/oeo-extended/$(cat VERSION)/oeo-extended.omn | uniq -d | grep -Poc "Class: \K(.*)" || echo ::set-output name=status::$?
       - name: raise-error-duplicates
-        if: steps.duplicates.outputs.status == '1'
+        if: steps.duplicates.outputs.status == 1
         run: exit 1
       - name: check inferred equivalence
         run: |
