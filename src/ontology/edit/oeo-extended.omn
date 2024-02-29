@@ -179,6 +179,30 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340006>
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340007>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report without measures is a study report that is about one or more policy scenarios without measures.",
+        rdfs:label "policy scenario report without measures"@en
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340008>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A reference scenario report is a study report that is about one or more reference scenarios.",
+        rdfs:label "reference scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020314>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
 
     
@@ -187,6 +211,10 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000183>
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
 
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020310>)
+    
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
 
@@ -194,10 +222,16 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020309>
 
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020310>
+
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020311>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020312>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020314>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020317>
