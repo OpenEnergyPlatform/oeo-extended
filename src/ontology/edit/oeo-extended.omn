@@ -109,6 +109,20 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340000>
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340001>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An economic scenario report is a study report that is about one or more economic scenarios.",
+        rdfs:label "economic scenario report"@de
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00030008>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
 
     
@@ -128,6 +142,9 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020321>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030007>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030008>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00050016>
