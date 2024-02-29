@@ -165,6 +165,20 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340004>
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340006>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report with existing measures is a study report that is about one or more policy scenarios with existing measures.",
+        rdfs:label "policy scenario report ith existing measures"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020311>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
 
     
@@ -178,6 +192,9 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020309>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020311>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020312>
