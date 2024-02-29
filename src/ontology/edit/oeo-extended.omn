@@ -99,7 +99,7 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340000>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A climate scenario report is a study report that is about one or more climate scenarios.",
-        rdfs:label "climate scenario report"@de
+        rdfs:label "climate scenario report"@en
     
     EquivalentTo: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
@@ -113,7 +113,7 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340001>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "An economic scenario report is a study report that is about one or more economic scenarios.",
-        rdfs:label "economic scenario report"@de
+        rdfs:label "economic scenario report"@en
     
     EquivalentTo: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
@@ -127,7 +127,7 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340002>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "An energy scenario report is a study report that is about one or more energy scenarios.",
-        rdfs:label "energy scenario report"@de
+        rdfs:label "energy scenario report"@en
     
     EquivalentTo: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
@@ -141,7 +141,7 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340003>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report is a study report that is about one or more policy scenarios.",
-        rdfs:label "policy scenario report"@de
+        rdfs:label "policy scenario report"@en
     
     EquivalentTo: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
@@ -155,7 +155,7 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340004>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report with additional measures is a study report that is about one or more policy scenarios with additional measures.",
-        rdfs:label "policy scenario report with additional measures"@de
+        rdfs:label "policy scenario report with additional measures"@en
     
     EquivalentTo: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
