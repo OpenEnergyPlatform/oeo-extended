@@ -185,6 +185,10 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340007>
         <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report without measures is a study report that is about one or more policy scenarios without measures.",
         rdfs:label "policy scenario report without measures"@en
     
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020310>)
+    
     SubClassOf: 
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
     
