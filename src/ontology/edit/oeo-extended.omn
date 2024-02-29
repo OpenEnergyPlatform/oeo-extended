@@ -123,6 +123,34 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340001>
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340002>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An energy scenario report is a study report that is about one or more energy scenarios.",
+        rdfs:label "energy scenario report"@de
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00030010>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340003>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report is a study report that is about one or more policy scenarios.",
+        rdfs:label "policy scenario report"@de
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020309>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
 
     
@@ -135,6 +163,9 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
 
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020309>
+
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020317>
 
     
@@ -145,6 +176,9 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030007>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030008>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030010>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00050016>
