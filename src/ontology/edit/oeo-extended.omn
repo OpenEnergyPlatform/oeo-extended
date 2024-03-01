@@ -95,6 +95,146 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010003>
          and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020317>)
     
     
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340000>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A climate scenario report is a study report that is about one or more climate scenarios.",
+        rdfs:label "climate scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00030007>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340001>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An economic scenario report is a study report that is about one or more economic scenarios.",
+        rdfs:label "economic scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00030008>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340002>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An energy scenario report is a study report that is about one or more energy scenarios.",
+        rdfs:label "energy scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00030010>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340003>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report is a study report that is about one or more policy scenarios.",
+        rdfs:label "policy scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020309>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340004>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report with additional measures is a study report that is about one or more policy scenarios with additional measures.",
+        rdfs:label "policy scenario report with additional measures"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020312>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340006>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report with existing measures is a study report that is about one or more policy scenarios with existing measures.",
+        rdfs:label "policy scenario report with existing measures"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020311>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340007>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A policy scenario report without measures is a study report that is about one or more policy scenarios without measures.",
+        rdfs:label "policy scenario report without measures"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020310>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340008>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A reference scenario report is a study report that is about one or more reference scenarios.",
+        rdfs:label "reference scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020314>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340009>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A sufficiency scenario report is a study report that is about one or more sufficiency scenarios.",
+        rdfs:label "sufficiency scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020345>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340010>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A target driven scenario report is a study report that is about one or more target driven scenarios.",
+        rdfs:label "target driven scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020247>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
 
     
@@ -107,13 +247,45 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
 
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020247>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020309>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020310>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020311>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020312>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020314>
+
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020317>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020321>
 
     
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020345>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030007>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030008>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030010>
+
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00050016>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00140003>
+
+    
