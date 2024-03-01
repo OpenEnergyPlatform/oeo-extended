@@ -207,6 +207,20 @@ Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340008>
         <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
     
     
+Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00340009>
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A sufficiency scenario report is a study report that is about one or more sufficiency scenarios.",
+        rdfs:label "sufficiency scenario report"@en
+    
+    EquivalentTo: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020345>)
+    
+    SubClassOf: 
+        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+    
+    
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
 
     
@@ -238,6 +252,9 @@ Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020317>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020321>
+
+    
+Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020345>
 
     
 Class: <http://openenergy-platform.org/ontology/oeo/OEO_00030007>
