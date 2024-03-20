@@ -11,6 +11,7 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 Ontology: <http://openenergy-platform.org/ontology/oeo-extended/>
 
+Import: <http://openenergy-platform.org/ontology/oeo/dev/oeo.omn>
 Import: <http://openenergy-platform.org/ontology/oeo/releases/2.1.0/oeo.omn>
 
 Annotations: 
