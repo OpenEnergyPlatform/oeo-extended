@@ -1,6 +1,7 @@
-Prefix: : <https://openenergy-platform.org/ontology/oeo-extended/>
+Prefix: : <http://openenergy-platform.org/ontology/oeo-extended/>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: dct: <http://purl.org/dc/terms/>
+Prefix: oeo: <http://openenergy-platform.org/ontology/oeo/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -11,7 +12,7 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 Ontology: <http://openenergy-platform.org/ontology/oeo-extended/>
 
-Import: <http://openenergy-platform.org/ontology/oeo/releases/2.1.0/oeo.omn>
+Import: <http://openenergy-platform.org/ontology/oeo/dev/oeo.omn>
 
 Annotations: 
     dc:description "The Open Energy Ontology Extended (OEOX) extends the Open Energy Ontology. It contains compositions of terms that are too specific for the OEO.",
@@ -39,81 +40,83 @@ Datatype: rdf:PlainLiteral
 Datatype: xsd:string
 
     
-ObjectProperty: <http://openenergy-platform.org/ontology/oeo/OEO_00020056>
-
-    
 ObjectProperty: <http://purl.obolibrary.org/obo/IAO_0000136>
 
     
 ObjectProperty: <http://purl.obolibrary.org/obo/RO_0000057>
 
     
-Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010000>
+ObjectProperty: oeo:OEO_00020056
+
+    
+Class: OEOX_00010000
 
     Annotations: 
         rdfs:label "final energy consumption of gasoline for transport"@en
     
     EquivalentTo: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00050016>
-         and (<http://openenergy-platform.org/ontology/oeo/OEO_00020056> some 
-            (<http://openenergy-platform.org/ontology/oeo/OEO_00140003>
-             and (<http://purl.obolibrary.org/obo/RO_0000057> some <http://openenergy-platform.org/ontology/oeo/OEO_00000183>)))
+        oeo:OEO_00050016
+         and (oeo:OEO_00020056 some 
+            (oeo:OEO_00140003
+             and (<http://purl.obolibrary.org/obo/RO_0000057> some oeo:OEO_00000183)))
     
     
-Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010001>
+Class: OEOX_00010001
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A CO2 emisson scenario report is a study report that is about one or more CO2 emission scenarios.",
         rdfs:label "CO2 emission scenario report"@en
     
     EquivalentTo: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
-         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020321>)
+        oeo:OEO_00020012
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some oeo:OEO_00020321)
     
     
-Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010002>
+Class: OEOX_00010002
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A wind turbine space requirement is a specific space requirement that is a quantity value of one or more wind energy converting units.",
         rdfs:label "wind turbine space requirement"@en
     
     EquivalentTo: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
-         and (<http://openenergy-platform.org/ontology/oeo/OEO_00020056> some <http://openenergy-platform.org/ontology/oeo/OEO_00000044>)
+        oeo:OEO_00020141
+         and (oeo:OEO_00020056 some oeo:OEO_00000044)
     
     SubClassOf: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
+        oeo:OEO_00020141
     
     
-Class: <http://openenergy-platform.org/ontology/oeo-extended/OEOX_00010003>
+Class: OEOX_00010003
 
     Annotations: 
         rdfs:label "GHG emission scenario report"@en
     
     EquivalentTo: 
-        <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
-         and (<http://purl.obolibrary.org/obo/IAO_0000136> some <http://openenergy-platform.org/ontology/oeo/OEO_00020317>)
+        oeo:OEO_00020012
+         and (<http://purl.obolibrary.org/obo/IAO_0000136> some oeo:OEO_00020317)
     
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000044>
+Class: oeo:OEO_00000044
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00000183>
+Class: oeo:OEO_00000183
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020012>
+Class: oeo:OEO_00020012
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020141>
+Class: oeo:OEO_00020141
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020317>
+Class: oeo:OEO_00020317
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00020321>
+Class: oeo:OEO_00020321
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00050016>
+Class: oeo:OEO_00050016
 
     
-Class: <http://openenergy-platform.org/ontology/oeo/OEO_00140003>
+Class: oeo:OEO_00140003
+
+    
